@@ -1,0 +1,34 @@
+<%- include('layouts/head') -%>
+
+    <body>
+        <header>
+            <%- include('layouts/header1') -%>
+            <%- include('layouts/nav-admin') -%>
+        </header>
+        <main id="addPage">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <label for="pageTitle">Page Title: </label>
+                <input type="text" name="pageTitle" id="pageTitle" autofocus><br><br>
+
+                <label for="pageImage">Page Image: </label>
+                <input type="file" name="pageImage" id="pageImage"><br><br>
+
+                <label for="pageContent">Page Content:</label><br><br>
+                <textarea style="width:700px;" name="pageContent" id="pageContent"></textarea><br><br>
+
+                <input class="buttons" type="submit" value="Submit">
+            </form>
+            <%
+            if(typeof(errors) != 'undefined'){
+                for(var error of errors){ 
+                    %>
+                <p class="errors">
+                    <%= error.msg %>
+                </p>
+                <%
+                }
+            }
+            %>
+        </main>
+    </body>
+    <%- include('layouts/footer') -%>

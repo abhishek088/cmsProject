@@ -1,0 +1,23 @@
+<%- include('layouts/head') -%>
+
+    <body>
+        <header>
+            <%- include('layouts/header1') -%>
+            <%- include('layouts/nav-admin') -%>
+        </header>
+        <main>
+            <form action="" method="POST" enctype="multipart/form-data">
+                <label for="pageTitle">Page Title: </label>
+                <input type="text" name="pageTitle" id="pageTitle" value="<%= page.pageTitle %>" autofocus><br><br>
+
+                <label for="pageImage">Page image: </label>
+                <input type="file" name="pageImage" id="pageImage" src="/logo/<%= page.pageImageName %>"><br><br>
+
+                <label for="pageContent">Page Content:</label><br><br>
+                <textarea style="width:700px;" name="pageContent" id="pageContent"><%= page.pageContent %></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </body>
+    <%- include('layouts/footer') -%>

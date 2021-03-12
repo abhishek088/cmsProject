@@ -1,0 +1,173 @@
+html{
+    background-image: url('/logo/background.jpg');
+}
+body {
+    width: 800px;
+    margin: 30px auto;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgb(166, 166, 236);
+}
+
+header {
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+#nav_menu {
+    background-color: rgb(135, 152, 209);
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 10px #2c2c2c;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+}
+
+#nav_menu ul li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+}
+
+#nav_menu ul li:hover {
+    background-color: rgb(253, 255, 124);
+}
+
+#nav_menu ul li a {
+    color: black;
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+#login,
+#signup  {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    margin: 30px 200px;
+    line-height: 40px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 80%;
+    text-align: center;
+    border-top: 2px solid rgb(34, 50, 102);
+    padding-top: 10px;
+}
+
+#login label, #signup label{
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    font-size: 80%;
+}
+
+#login input, #signup input {
+    width: 12em;
+    margin-left: .2em;
+    margin-bottom: .5em;
+    border: 1px solid black;
+}
+
+.errors {
+    text-align: center;
+    font-size: 70%;
+    color: red;
+    margin: 0;
+}
+
+form {
+    margin: 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 2px solid black;
+    padding: auto 5px;
+    width: 200px;
+    text-align: center;
+}
+
+
+
+#logo{
+    float: left;
+    margin-left: 20px;
+}
+
+#about{
+    margin: 30px;
+}
+#home{
+    margin: 30px;
+}
+#addPage form label{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    font-size: 100%;
+}
+#addPage form input{
+    width: 20em;
+    margin-left: 0em;
+    margin-bottom: .5em;
+}
+#editSite form input{
+    width: 640px;
+    margin-left: 0em;
+    margin-bottom: .5em;
+}
+#editSite form label{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    font-size: 100%;
+}
+#editSite{
+    margin: 20px;
+}
+
+.buttons{
+    width: 130px !important;
+    height: 30px;
+    margin-left: 280px !important;
+    border-radius: 5px;
+    border: 1.6px solid black;
+}
+
+.loginButtons{
+    width: 130px !important;
+    height: 20px;
+    border-radius: 5px;
+    border: 1.6px solid black !important;
+}
+input:focus { 
+    outline: none !important;
+    border: 1.5px solid black !important;
+    box-shadow: 0 0 5px black;
+}
+
+#allPages{
+    margin: 30px;
+}
+
+#newPage{
+    margin: 40px;
+}

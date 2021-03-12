@@ -1,0 +1,14 @@
+<%- include('layouts/head') -%>
+
+    <body>
+        <header>
+            <%- include('layouts/header1') -%>
+            <%- include('layouts/nav-visitor') -%>
+        </header>
+        <main id="newPage">
+            <h2 style="text-align: center;"><%= pageTitle %></h3>
+            <img src="/page_images/<%= pageImageName %>" style="margin: 0 auto; display: block; width: 50%;" alt="Page Image" width="300" height="300">
+            <p><%- pageContent %></p>
+        </main>
+    </body>
+    <%- include('layouts/footer') -%>

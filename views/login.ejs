@@ -1,0 +1,26 @@
+<%- include('layouts/head') -%>
+
+    <body>
+        <header>
+            <%- include('layouts/header1') -%>
+            <%- include('layouts/nav-visitor') -%>
+        </header>
+        <main>
+            <form name="login" id="login" method="POST" action="">
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" autofocus><br>
+
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password"><br>
+
+                <p id="errors" class="errors">
+                    <% if(typeof error !== 'undefined'){ %>
+                            <%= error %>
+                        <% } %>
+                </p>  
+                </p>             
+                <input class="loginButtons" type="submit" id="buttons" value="Login">
+            </form>
+        </main>
+    </body>
+    <%- include('layouts/footer') -%>

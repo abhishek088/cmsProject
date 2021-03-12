@@ -1,0 +1,17 @@
+<nav id="nav_menu">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <%
+        for(var page of pages){%>
+            <li>
+                <a href="/page/<%= page._id%>">
+                    <%= page.pageTitle %>
+                </a>
+            </li>
+            <%}
+        %>  
+        <li><a href="/allpages">Edit</a></li>  
+        <li><a href="/logout">Logout</a></li>    
+    </ul>
+</nav>

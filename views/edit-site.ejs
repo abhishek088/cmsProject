@@ -1,0 +1,23 @@
+<%- include('layouts/head') -%>
+
+    <body>
+        <header>
+            <%- include('layouts/header1') -%>
+            <%- include('layouts/nav-admin') -%>
+        </header>
+        <main id="editSite">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <label for="siteTitle">Site Title: </label><br>
+                <input type="text" name="siteTitle" id="siteTitle" value="<%= site.siteTitle %>" autofocus><br><br>
+
+                <label for="copyright">Copyright: </label><br>
+                <input type="text" name="copyright" id="copyright" value="<%= site.copyright %>"><br><br>
+
+                <label for="logo">Logo: </label><br>
+                <input type="file" name="logo" id="logo" src="/logo/<%= site.logoName %>"><br><br>
+
+                <input class="buttons" type="submit" value="Submit">
+            </form>
+        </main>
+    </body>
+    <%- include('layouts/footer') -%>

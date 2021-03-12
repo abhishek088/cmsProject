@@ -1,0 +1,43 @@
+<%- include('layouts/head') -%>
+
+    <body>
+        <header>
+            <%- include('layouts/header1') -%>
+            <%- include('layouts/nav-admin') -%>
+        </header>
+        <main id="allPages">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Image</th>
+                        <th>Date</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%
+                        for(var page of pages){
+                            %>
+                        <tr>
+                            <td>
+                                <%= page.pageTitle %>
+                            </td>
+                            <td>
+                                <%= page.pageImageName %>
+                            </td>
+                            <td>
+                                <%= page.editDate %>
+                            </td>
+                            <td><a href="/edit-page/<%= page._id %>">Edit</a></td>
+                            <td><a href="/delete/<%= page._id %>">Delete</a></td>
+                        </tr>
+                        <%
+                        }
+                    %>
+                </tbody>
+            </table>
+        </main>
+    </body>
+    <%- include('layouts/footer') -%>
